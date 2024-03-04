@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: ghostwhite;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 90px;
+}
+
+.encabezado {
+    width: 419px;
+    height: 90px;
+    clear: none;
+    float: left;
+}
+
+.header_Logo {
+    width: 70px;
+    height: 70px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 10px 30px;
+    float: left;
+    display: block;
+}
+
+.header_brandName {
+    font-family: Raleway, sans-serif;
+    color: #04135D;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 90px;
+    clear: none;
+}
+
+nav ul {
+    float: right;
+    clear: none;
+    margin: 20px 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #04135D;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 5px 11px;
+    line-height: 60px;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: rgba(237, 223, 19, 1);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.5s ease-out;
+    bottom: 0;
+    left: 0;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+    text-decoration: none;
+}
+
+nav ul:hover > li:not(:hover) {
+    transform: scale(0.9);
+    filter: blur(5px);
+    transition: all 0.9s;
+}
+
+li a:hover {
+    color: #04135D;
+    font-size: 19px;
+    transition: all 0.5s;
+}
+
+.checkbtn {
+    color: #04135D;
+    font-size: 31px;
+    float: right;
+    line-height: 90px;
+    margin: 0 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+main {
+    width: 100%;
+}
+
+.promociones {
+    width: 100vw;
+    height: 600px;
+    max-height: 600px;
+    margin: 5px auto;
+    display: flex;
+    position: relative;
+    background-image: url(../graphic/swimmingCarrousell-fotor-20240302102233.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
+
+.promociones_txt {
+    width: 400px;
+    height: 130px;
+    position: absolute;
+    top: 20%;
+    margin: 60px 25px;
+}
+
+.promociones_txt h3 {
+    font-family: Raleway, sans-serif;
+    font-size: 2.8rem;
+    color: #04135D;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 9px;
+    text-shadow: 5px 2px 0px rgba(237, 223, 19, 1);
+}
+
+.promociones_txt a {
+    background-color: yellow;
+    font-family: Raleway, sans-serif;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #04135D;
+    margin: 10px 15px;
+    position: absolute;
+    left: 33%;
+}
+
+
+.envolturaMensajeBienvenida {
+    width: 100%;
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 25px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+#mensajeBienvenida {
+    width: 100%;
+    font-family: Raleway, sans-serif;
+    font-size: 25px;
+}
+
+#mensajeBienvenida h3 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #04135D;
+    text-align: center;
+    margin: 2%;
+}
+
+#bienvenida_txt {
+    width: 90%;
+    text-align: center;
+    font-weight: 350;
+    margin: 5px auto;
+    padding: 1%;
+}
+
+#bienvenida_actividaes {
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    margin: 25px;
+    padding: 1%;
+}
+
+
+#mensajeBienvenida ul {
+    text-align: center;
+    margin: 25px 0;
+    list-style: none;
+}
+
+#mensajeBienvenida ul li {
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+#mensajeBienvenida ul li a {
+    text-decoration: none;
+    color: #04135D;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* /////// SECTION CONOCENOS ///////// */
+
+#conocenos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.envolturaConocenos {
+    width: 100%;
+    max-width: 900px;
+    margin: 70px auto;
+}
+
+.conocenos_info {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+}
+
+.conocenos_info h3 {
+    font-size: 45px;
+    font-weight: 500;
+    color: #04135D;
+    text-shadow: 3px 2px 6px rgba(237, 223, 19, 1);
+    margin: 20px;
+}
+
+/* //////// CONOCENOS -- CARDS INFORMACIÓN DE IDENTIDAD DE ASC //////// */
+.cardsInfo {
+    width: 100%;
+    max-width: 1000px;
+    height: 315px;
+    margin: 22px auto;
+    clear: both;
+}
+
+.conocenos_cardInfo {
+    width: 23%;
+    height: 300px;
+    float: left;
+    margin: 1%;
+    background-color: #04135D;
+    border-radius: 15px;
+    color: whitesmoke;
+}
+
+
+#cardInfo_titulo {
+    display: flex;
+    height: 70px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+.conocenos_cardInfo i {
+    font-size: 35px;
+    margin: 15px;
+}
+
+#cardInfo_txt {
+    font-size: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* ////// SECTION VALORES CORPORATIVOS /////// */
+
+.conocenos_valores h3 {
+    font-family: Raleway, sans-serif;
+    font-size: 40px;
+    color: #04135D;
+    text-align: center;
+
+}
+
+.valoresASC {
+    width: 100%;
+    max-width: 850px;
+    height: 350px;
+    margin: 30px auto 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* //// CARD -- Valores Corporativos ////// */
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 280px;
+    margin: 15px;
+    padding: 5px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Raleway, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 5px 2px 0px rgba(237, 223, 19, 1);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card::before,
+.card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #04135D;
+    transition: all 0.5s;
+}
+
+
+.valoresASC .card:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.6s;
+
+}
+
+.valoresASC:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+    transition: all 0.8s;
+}
+
+/* ///// CARD -- Valor A /////// */
+
+#valorA::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+#valorA::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+#valorA:hover::before,
+#valorA:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.8s;
+}
+
+#valorA:hover:after {
+    content: "Adaptabilidad";
+    color: rgba(237, 223, 19, 1);
+    text-shadow: none;
+    font-family: Raleway, sans-serif;
+}
+
+/* ///// CARD -- Valor S /////// */
+
+#valorS::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+#valorS::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+#valorS:hover::before,
+#valorS:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.8s;
+}
+
+#valorS:hover:after {
+    content: "Seguridad";
+    color: rgba(237, 223, 19, 1);
+    text-shadow: none;
+    font-family: Raleway, sans-serif;
+}
+
+/* ///// CARD -- Valor C /////// */
+
+
+#valorC::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+#valorC::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+#valorC:hover::before,
+#valorC:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+#valorC:hover:after {
+    content: "Compromiso";
+    color: rgba(237, 223, 19, 1);
+    text-shadow: none;
+    font-family: Raleway, sans-serif;
+}
+
+
+/* /////// FOOTER //////// */
+
+footer {
+    background-color: #04135D;
+    width: 100%;
+    height: 370px;
+    font-family: Raleway, sans-serif;
+    color: whitesmoke;
+}
+
+.contacto {
+    width: 100%;
+    max-width: 900px;
+    height: 270px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto_sucursales {
+    width: 40%;
+    height: 190px;
+    clear: none;
+    float: left;
+    margin: 20px 5%;
+}
+
+.contacto_sucursales h5 {
+    font-size: 20px;
+    text-align: center;
+    margin: 1%;
+    padding: 4%;
+}
+
+.contacto_sucursales p {
+    margin: 10px;
+}
+
+#ascCuajimalpa {
+    width: 40%;
+    height: 190px;
+    clear: none;
+    float: left;
+    margin: 5% 20px;
+}
+
+.contacto_telefono {
+    display: flex;
+    font-size: 20px;
+
+}
+
+.contacto_telefono i {
+    margin: 10px;
+}
+
+.contacto_wa {
+    display: flex;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.contacto_wa i {
+    margin: 10px;
+}
+
+.contacto_wa p {
+    display: flex;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#direccion {
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#redesSociales {
+    display: grid;
+    margin: 20px;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    font-size: 50px;
+}
+
+#redesSociales a {
+    color: rgba(237, 223, 19, 1);
+    text-decoration: none;
+    margin: 5px;
+}
+
+#redesSociales a:hover {
+    color: #005bba;
+    transition: all 0.5s;
+}
+
+/* ///// loader gadget ////// */
+
+.spinner {
+    --size: 90px;
+    --first: #005bba;
+    --second: rgba(237, 223, 19, 1);
+    width: 450px;
+    height: 450px;
+    position: relative;
+    animation: spin 5s ease-out infinite;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    width: var(--size);
+    height: var(--size);
+    border: 4px solid var(--first);
+    border-top: 4px solid var(--second);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spinRing 0.5s ease-out infinite;
+    box-shadow: 0 0 10px var(--first);
+}
+
+.spinner::before {
+    filter: blur(10px);
+}
+
+@keyframes spinRing {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

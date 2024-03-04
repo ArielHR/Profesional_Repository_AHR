@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatik Sport Center</title>
+    <link rel="stylesheet" href="../styles/indexStyles.css" type="text/css">
+    <script src="https://kit.fontawesome.com/ee75cc218a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="encabezado">
+                <div class="header_Logo"></div>
+                <h1 class="header_brandName">Aquatik Sport Center</h1>
+            </div>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="#conocenos">Conócenos</a></li>
+                <li><a href="">Membresias</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="promociones">
+            <div class="promociones_txt">
+                <h3 class="promocionesTitulo">Inscripciones gratis</h3>
+                <a href="">Inscribete ya</a>
+            </div>
+        </div>
+
+        <section class="envolturaMensajeBienvenida">
+            <article id="mensajeBienvenida">
+                <h3>Encuentra tu pasión transformando tu cuerpo</h3>
+                <p id="bienvenida_txt">Ejercítate con nuestras disciplinas deportivas en nuestras dos sucursales</p>
+                <p id="bienvenida_actividaes">+12 actividades</p>
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/QKbVn7YRAzAiZGR47">ASC Balbuena</a></li>
+                    <li><a href="https://maps.app.goo.gl/TPgg6R2LtrXExz9E8">ASC Cuajimalpa</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <article id="conocenos">
+
+            <section class="envolturaConocenos">
+                <section class="conocenos_info">
+                    <h3>Aquatik Sport Center</h3>
+                    <section class="cardsInfo">
+                        <div class="conocenos_cardInfo">
+                            <p id="cardInfo_titulo">35 años</p>
+                            <i class="fa-solid fa-medal"></i>
+                            <p id="cardInfo_txt">Formando altletas de alto nivel</p>
+                        </div>
+                        <div class="conocenos_cardInfo">
+                            <p id="cardInfo_titulo">2 sucursales</p>
+                            <i class="fa-regular fa-building"></i>
+                            <p id="cardInfo_txt">Siempre a tu disposición</p>
+                        </div>
+                        <div class="conocenos_cardInfo">
+                            <p id="cardInfo_titulo">2 Equipos de Natación</p>
+
+                            <i class="fa-solid fa-trophy"></i>
+                            <p id="cardInfo_txt">Arransando en el podio</p>
+                        </div>
+                        <div class="conocenos_cardInfo">
+                            <p id="cardInfo_titulo">+25 Instructores</p>
+                            <i class="fa-solid fa-square-check"></i>
+                            <p id="cardInfo_txt">Certificados para darte las mejores bases para tu formación</p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section class="envolturaValores">
+                <section class="conocenos_valores">
+                    <h3>Valores Corporativos</h3>
+                    <section class="valoresASC">
+                        <div class="card" id="valorA">A</div>
+                        <div class="card" id="valorS">S</div>
+                        <div class="card" id="valorC">C</div>
+                    </section>
+                </section>
+            </section>
+        </article>
+
+    </main>
+    <footer>
+        <section class="contacto">
+            <div class="contacto_sucursales">
+                <h5> ASC Jardín Balbuena</h5>
+                <p id="direccion">Retorno 11 de Ignacio Zaragoza 32, Jardín Balbuena, Alcaldía Venustiano Carranza C.P 15900, Ciudad de México</p>
+                <div class="contacto_telefono">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>55 5785 0270</p>
+                </div>
+                <div class="contacto_wa">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>55 2035 0435</p>
+                </div>
+            </div>
+            <div class="contacto_sucursales">
+                <h5>ASC Cuajimalpa</h5>
+                <p id="direccion">Juárez Poniente 145 esq. 12 de Diciembre, Cuajimalpa C.P 05000, Ciudad de México</p>
+                <div class="contacto_telefono">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>55 5813 0751</p>
+                </div>
+                <div class="contacto_wa">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>55 2035 0435</p>
+                </div>
+            </div>
+        </section>
+        <section id="redesSociales">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+        </section>
+    </footer>
+
+    <div class="spinner"></div>
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".spinner").fadeOut("slow");
+        });
+
+    </script>
+</body>
+
+</html>
